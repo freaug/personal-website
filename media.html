@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Digital Media</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Eddie Farr</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Bio</a></li>
+            <li class="active"><a href="#contact">Media</a></li>
+            <li><a href="software.html">Software</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+      
+      <div class="container container-main">
+    
+        <img src="img/banner.png" class="media-img">
+        <img src="img/line.png" class="line">
+
+<!-- Audio -->  
+    <section class="sounds">
+        <div class="container">
+        <h2>Audio</h2>
+        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-11 col-md-7">
+                <div>
+                    <h3>RSN (2012) - Fixed Media</h3>
+                    <h5>Premiere - Fall 2012, Georgia Southern Universities Channel Noise Concert</h5>
+                    <p>Intended for 4.1 speaker setup, Rsn draws on glitched saxophone and created sounds, aiming to envelope the listener in a whirlwind of chaotic noise.</p>
+                </div>
+                <div>
+                    <h3>Trevize (2013) - Alto Saxophone and Interactive Media</h3>
+                    <h5>Premiere - Spring 2013, Georgia Southern Universities Channel Noise Concert</h5>
+                    <p>Trevize attempts to simulate a faulty/damaged computer/robot attempting to restart and fix damaged systems</p>
+                </div>
+                <div>
+                    <h3>Tabula (2013) - Fixed Media</h3>
+                    <p>Tabula is a stereo piece and employs grainular and pulsar syntheses throughout.</p>                    
+                </div>
+                <div>
+                    <h3>Tempus (2013) - Alto Saxophone and Interactive Media</h3>
+                    <h5>Premiere - 2014 Agnes Scott Spring Equinox Concert (with X-Modalities)</h5>
+                    <p>Intended for 4.1 speaker setup, Tempus employs four digital delay lines with ambisonic panning of the resulting sound sources. The piece focuses on soft tones and gentle                    multiphonics to help the listeners lose themselves in quiet contemplation. The visual element of the piece is composed of video feedback. A computer performer controls the                  visuals in the A and A' sections. In the B section, the computer generates the visuals in response to what the saxophonist plays.</p>                    
+                </div>
+                <div>
+                    <h3>Sequenza (2014) - Augmented Alto and Baritone Saxophones and Laptop</h3>
+                    <p>Premiere - 2014 Root Signals Electronic Music Festival</p>
+                    <p>Intended for any number of channels, the following performance of Sequenza was executed through 47 channels of audio. The piece features two saxophones, which are augmented to             allow the performers to pan their sounds inside the sound field created by the speakers. The laptop process audio feedback and generated visuals.</p>
+                </div>
+                <div>
+                    <h3>Chatter (2015) - Two Saxophones and Laptop</h3>
+                    <p>Chatter is a work for either two soprano saxophones or alto saxophones. The piece is a conversation between the two saxophones and their individual delayed signals. Speaker placement allows for there to be four sound sources all slightly apart which gives the impression of a conversation.</p>
+                </div>
+                 <div>
+                    <h3>Siam (2015) - Alto and Baritone Saxophones and Laptop</h3>
+                    <p>Siam, is a play on Duke Ellington’s In A Sentimental Mood. In contrast to Ellington's piece, which elicits feelings of nostalgia, siam has a darker tone, evoking a longing for a love that is no more. The melody is reminiscent of Ellington’s original piece but features a haunting accompaniment created by a set of multiphonics played by the baritone. The alto and baritone saxophones are processed through MaxMSP, resulting in a modulating delay line that provides a sonic bed for the two instruments to play over. The piece is semi improvisatory.</p>
+                </div>
+            </div>
+            
+            <div id="player">
+                <div class="col-xs-11 col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="btn-group" role="group">
+                              <button type="button" class="btn btn-default btn-responsive"><span id="playPause" class="glyphicon glyphicon-play"></span></button>
+            
+                              <button class="btn btn-default btn-responsive-text" style="cursor:default;background:white;border-color:#ccc;"><span id="currentSong">Current Song RSN</span></button>
+                            </div>
+                                
+                            <audio id="myAudio">
+                            <source src="audio/RSN.mp3" type="audio/mp3">
+                            Your broweser is not supported. 
+                            </audio>
+                        </div>
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-equalizer"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading" id="RSN" align="left">RSN</h4>
+                                    </div>
+                                </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <span class="glyphicon glyphicon-equalizer"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" id="Trevize" align="left">Trevize</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <span class="glyphicon glyphicon-equalizer"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" id="Tabula" align="left">Tabula</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <span class="glyphicon glyphicon-equalizer"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" id="Tempus" align="left">Tempus</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <span class="glyphicon glyphicon-equalizer"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" id="Sequenza" align="left">Sequenza</h4>
+                                        </div>
+                                    </div>
+
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <span class="glyphicon glyphicon-equalizer"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" id="chatter" align="left">Chatter</h4>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <span class="glyphicon glyphicon-equalizer"></span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 class="media-heading" id="siam" align="left">Siam</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+      
+<img src="img/line.png" class="line">
+<!-- Video -->
+    <section class="videos">
+            <div class="container">
+                <h2>Video</h2>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-11 col-md-5">
+                    <h3> Erium (2015) - Multimedia</h3>
+                    <p>Erium, written for planetarium, is an exploration of three frequency ranges. From beginning to end the piece moves from around 220 Hz down to 60Hz and up to 4000 Hz. This is displayed visually by three morphing images.</p>
+                    <h3>Space Shark (2014)</h3>
+                    <p>Space shark is a collaborative piece with the music collective <a href="https://www.facebook.com/F-Beams-539541979519570/?view_public_for=539541979519570" target="_blank">F-Beams</a>. This video is from a studio recording session and features <a href="http://www.matthewsbryant.com/" id="matt" target="_blank">Matt Bryant</a> on ukulele, Amarylis Sueing on alto saxophone, and Eddie Farr on baritone saxophone.</p>
+                    <h3>DDG (2015)</h3>
+                    <p>DDG is a collaborative piece with the music collective <a href="https://www.facebook.com/F-Beams-539541979519570/?view_public_for=539541979519570" target="_blank">F-Beams</a>. The piece features processed didgeridoo, ukulele and effects, alto saxophone, and live granular synthesis. This performance is from the 2014 Root Signals Electronic Music Festival and features <a href="http://www.matthewsbryant.com/" id="matt" target="_blank">Matt Bryant</a> on ukulele, Amarylis Sueing on alto saxophone, Chicken Head on laptop, and Eddie Farr on didgeridoo. Visuals were created in MaxMSP by Eddie Farr.</p>
+                </div>
+                <div id="player">
+                <div class="col-xs-11 col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h5 id="currentVideo">Current Video Erium</h5>
+                            <video id="myVideo" controls width="100%">
+                            <source src="video/erium.mov" type="video/mp4">
+                            Your broweser is not supported. 
+                            </video>
+                        </div>
+                            <div class="panel-body">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-film"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading" id="erium" align="left">Erium</h4>
+                                    </div>
+                                </div>
+                                
+                                <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-film"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading" id="spaceShark" align="left">Space Shark</h4>
+                                    </div>
+                                </div>
+                                
+                                  <div class="media">
+                                    <div class="media-left">
+                                        <span class="glyphicon glyphicon-film"></span>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="media-heading" id="DDG" align="left">DDG</h4>
+                                    </div>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>  
+    </section>
+      
+<img src="img/line.png" class="line">
+<!-- Installations -->   
+    <section class="installations">
+        <div class="container">
+            <h2>Installations</h2>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-11 col-md-11">
+                    <h3>Sphere (2014)</h3>
+                    <h5>Premiere - 2014 National Student Electronic Music Event (N_SEME)</h5>
+                    Created in MaxMSPJitter Sphere allows participants to discover sounds in an open world environment. Players use a Wii Fit board to navigate in space. When sounds are found the player can add them to them to the games soundfield. Sounds for Spehre were created by <a href="http://www.matthewsbryant.com/" id="matt">Matt Bryant.</a>
+                    
+                    <h3> 27 Words (2013-2015)</h3>
+                    <p><strong>Purpose:</strong> 27 Words is a multimedia installation that creates a visual and sonic environment based on individuals' interpretations of the Second Amendment to the United States Constitution.<br><br>
+
+<strong>Background:</strong> Over several years I collected haikus based on the Second Amendment to the United States Constitution. The collected haikus are used to generate new haikus. These new haikus are projected into a space. Additionally, participants were asked to send in audio recordings of their haikus. I processed this audio to take away the clarity of the words, leaving a static murmur. As participants move through the room, the quality of the murmur changes from static to more active and agitated.<br><br>
+
+<strong>Methodology:</strong> I chose to use 5-7-5 syllable haikus because it required participants to choose their words carefully based on ideas that were truly important to them and not just input the first thing that came to mind. For haiku generation, the haikus are broken down by line: top, middle, and bottom. Each line is then placed into a separate database. From these databases, new haikus are generated and projected onto a screen. The number of haikus present on the screen varies based on the number of people present in the room and their location to the screen. People are encouraged to input haikus on site to continue growing the database and increase the content of the project.</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+</div>
+<!-- footer --> 
+    <section class="footer">
+        <div class="container">
+            <p>Copyright &copy; 2015, All Rights Reserved</p>
+        </div>
+    </section>
+<!-- JS -->     
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/audioplayer.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

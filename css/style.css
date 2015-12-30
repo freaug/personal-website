@@ -1,0 +1,135 @@
+.sounds{
+    padding-top: 50px;
+}
+
+.programs{
+    padding-top: 50px;
+    padding-bottom: 125px;
+}
+
+.resume{
+    padding-top: 50px;
+}
+
+.resume h3{
+    font-variant: small-caps;       
+}
+
+.installations{
+    padding-bottom: 50px;
+}
+
+.footer{
+    display: block;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    background-color: black;
+}
+
+.line{
+    width: 100%
+}
+
+body {
+  padding-bottom: 0;
+  font-family: 'Open Sans', Arial, Tahoma;
+  color: #363636;
+  background: #55636d;
+  font-size: 16px;
+}
+
+header {
+  min-height: 100px;
+  overflow: auto;
+}
+
+header h1 {
+  margin: 0px;
+  padding: 20px 0 0 0;
+  font-size: 2.2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-align: center;
+  line-height: 1.4em;
+}
+
+.profile-img {
+  -webkit-box-shadow: 0px 0px 48px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 48px -12px rgba(0,0,0,0.75);
+  width: 320px;
+  display: block;
+  margin: auto;
+  margin-top: -80px;
+}
+
+.media-img {
+  width: 320px;
+  display: block;
+  margin: auto;
+  margin-top: -80px;
+}
+
+/* #ededed*/
+.container-main {
+  -webkit-box-shadow: 0px 0px 48px -12px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 48px -12px rgba(0,0,0,0.75);
+  background: #cbd8da;
+  margin-top: 160px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.contact-list{
+    list-style-type: none; 
+    padding: 0px
+}
+
+#player{
+    padding-top: 25px;
+}
+
+#player h4:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+#myAudio{
+    width: 100px;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+@media(max-width: 500px){
+    .profile-img {
+      width: 220px;
+      display: block;
+      margin: auto;
+      margin-top: -80px;
+    }
+
+    .media-img {
+        width: 220px;
+        display: block;
+        margin: auto;
+        margin-top: -80px;
+    }
+    
+    .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+    
+    .btn-responsive-text {
+    padding:2px 4px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+    
+}
